@@ -98,8 +98,7 @@
             </div>
           </div>
           <button class="mail__btn click" onclick="toggleModal()">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
+            <i class="fa-solid fa-envelope"></i>
           </button>
           <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
@@ -142,16 +141,16 @@
               </h4>
               <form id="contact__form" onsubmit="contact(event)">
                 <div class="form__item">
-                  <label class="form__item--name">Name</label>
-                  <input type="text" class="input" ></input>
+                  <label class="form__item--name" for="user_name">Name</label>
+                  <input type="text" name="user_name" class="input" required></input>
                 </div>
                 <div class="form__item">
                   <label class="form__item--name" for="email">Email</label>
-                  <input type="email" name="user_email" class="input" ></input>
+                  <input type="email" name="user_email" class="input" required></input>
                 </div>
                 <div class="form__item">
                   <label class="form__item--name" for="message">Message</label>
-                  <textarea type="text" class="input" ></textarea>
+                  <textarea type="text" name="message" class="input" required></textarea>
                 </div>
                 <button id="contact__submit" class="form__submit">
                   Send it my way!
@@ -259,7 +258,7 @@
             <img src="./assets/My_Logo.png" class="footer__logo" alt="">
           </figure>
           <div class="social__list">
-            <a href="" class="
+            <a href="https://github.com/AKyndheart" target="_blank" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
@@ -269,12 +268,12 @@
             link__hover-effect
             link__hover-effect--white
             ">Linkedin</a>
-            <a href="" class="
+            <a href="#" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
-            ">Email</a>
-            <a href="" class="
+            " onclick="toggleModal()">Email</a>
+            <a href="./assets/David Bragg Resume.pdf" target="_blank" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
