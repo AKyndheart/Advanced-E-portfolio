@@ -426,6 +426,10 @@ nav {
     width: 100%;
 }
 
+.modal__language--CSS {
+    scale: 1.25;
+}
+
 .modal__title {
     font-size: 26px;
 }
@@ -687,4 +691,68 @@ footer {
 .shape--8 {
     top: 80vh;
     left: 80vw;
+}
+
+/* MEDIA */
+
+@media (max-width: 768px){
+    .title {
+        font-size: 80px;
+    }
+    .header__para {
+        font-size: 20px;
+    }
+    .modal {
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .modal__half {
+        width: 100%;
+    }
+    .modal__language--image {
+        scale: 50%;
+    }
+    .project__discription--title {
+        font-size: 28px;
+    }
+    .project__description--sub-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 52px;
+    }
+    .title__secondary{
+        font-size: 52px;
+    }
+    .header__para {
+        font-size: 18px;
+    }
+    .header__para--about-me {
+        font-size: 18px
+    }
+    .nav__link:first-child {
+        display: none;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 40px;
+    }
 }
